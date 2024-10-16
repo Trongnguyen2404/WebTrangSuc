@@ -1,0 +1,813 @@
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    /* Emmet */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+/*hành vi khi cuộn*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*common*/
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.text-white{
+    color: #fff !important;
+}
+.text-center{
+    text-align: center;
+}
+.row{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.colum {
+    float: left;
+    padding: 0 8px;
+}
+.colum-full{
+    width: 100%;
+}
+.colum-two{
+    width: 50%;
+}
+.colum-three{
+    width: 33.3333%;
+}
+/*common*/
+
+/*
+1.từ ngoài vào trong
+2.từ trên xuống dưới
+3.tổng quan đến chi tiết
+*/
+
+/*
+1.vị trí
+2.kích thước
+3.màu sắc
+4.kiểu dáng(kiểu chữ, hình tròn, vuông,...)
+*/
+#mainheader{
+
+}
+ 
+
+#content{
+
+}
+
+#content .content-section {
+    background: linear-gradient(585deg, #ffffff, black);
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 142px 7px 112px;
+    min-height: 105vh;
+}
+
+#content .section-heading{
+    font-size: 90px;
+    font-family: 'Bebas Neue';
+    font-weight: 100;
+    color: black;
+    letter-spacing: 4px;
+}
+
+
+#content .section-heading,
+#content .section-sub-heading{
+    text-align: center;
+}
+
+#content .member-list{
+    margin-top: 47px;
+}
+
+#content .member-name{
+    margin:15px 0 15px 0;
+    font-size: 15px;
+
+}
+
+#content .member-img{
+    width: 60%;
+    border-radius: 4px;/*bo góc*/
+    image-rendering: pixelated;
+}
+/* contact-section */
+#footer{
+
+}
+.contact-concent {
+    margin-top: 32px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="fa-"] {
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+
+}
+.contact-form #form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact-form .form-submit-btn{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 010px 16px;
+    float: right;
+}
+.contact-form .form-submit-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+.socials-list{
+    font-size: 24px;
+}
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+#footer .coppy{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .coppy a{
+    color: rgba(0, 0, 0, 0.6);
+}
+.header-zindex-1{
+    z-index: 1;
+}
+.header-zindex-2{
+    z-index: 2;
+}
+
+
+#product {
+    min-height: 100%;
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: 'Bebas Neue', cursive;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+.line {
+    background-color: red;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section.character::before {
+    content: '';
+    width: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.block {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.saitama::before, .saitama .block {
+    background-color: #C7E5FF;
+}
+
+.genos::before, .genos .block {
+    background-color: #C5DDE6;
+}
+.caption {
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+    width: 30%;
+    font-weight: 400;
+    color: #444;
+    font-family: monospace;
+    transform: translate(100%, 100%);
+}
+
+.character img {
+    position: relative;
+    z-index: 10;
+    height: 80vh;
+    width: auto;
+    transform: translateY(-100%);
+}
+.menu-icon{
+    display: none;
+}
+.huge-text {
+    font-size: 20rem;
+    width: 100%;
+    text-align: center;
+    color: #f52b2b;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    transform: translateY(100%);
+    font-weight: 700;
+}
+
+.nickname {
+    color: white;
+    position: absolute;
+    top: 6rem;
+    right: 4rem;
+    font-size: 3rem;
+    text-align: right;
+    transform: translateY(-200%);
+}
+
+.nickname span {
+    display: block;
+    font-size: 70%;
+    color: #fff;
+}
+
+.quote {
+    color: white;
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+    font-size: 2rem;
+    width: 30%;
+    text-align: right;
+    transform: translateY(200%);
+}
+
+.quote::before, .quote::after {
+    content: '';
+    color: #fff;
+}
+.logo{
+    font-size: 200px;
+    color: #000;
+    z-index: 1;
+}
+
+
+.card1 {
+    background: orange;
+    overflow: hidden;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: #453E3B;
+    height: 100vh;
+    transition: 0.5s;
+}
+ul.listCard {
+    height: 80%;
+    margin-right: -20px;
+    overflow-y: scroll;
+}
+.card1.active {
+    left: calc(100% - 500px);
+}
+.card1 h1{
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 11%;
+    display: flex;
+    align-items: center;
+}
+.card1 .checkOut{
+    height: 8%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card1 .checkOut div{
+    background-color: #E8BC0E;
+    width: 100%;
+    color: black;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card1 .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+    margin: 10px 0;
+    border: 1px solid #281f1b2b;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+
+.footer .container {
+    max-width: 100%;
+    margin: 0;
+
+}
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+.footer {
+    position: relative;
+    background-color: #24262b;
+    padding: 70px 20px;
+}
+.footer-col {
+    width: 20%;
+    padding: 0 1%;
+    margin-left: 1%;
+    text-align: center;
+}
+.footer-col .contact {
+    font-size: 13px; 
+    text-transform: capitalize; 
+    color: #ffffff; 
+    text-decoration: none; 
+    font-weight: 300; 
+    color: #bbbbbb; 
+    display: block;
+}
+.footer-col h4{
+	font-size: 16px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+    width: -webkit-fill-available;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li{
+    color: white;
+}
+.footer-col ul li a {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer h2 {
+    color: #333;
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer p{
+    color: black;
+    font-size: 15px;
+    text-align: justify;
+    margin: 20px 40px 20px 40px;
+}
+.footer h3{
+    color: #000;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.footer h5{color: black;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.footer form#review_form1 {
+    width: 37%;
+    display: grid;
+    float: right;
+    padding: 50px  0;
+}
+.footer input {
+    background: #ffffff36;
+    outline: none;
+}
+button#save_review1 {
+    cursor: pointer;
+}
+.introduce{
+    position: absolute;
+    top: 30px;
+    font-family: 'Bebas Neue';
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+#about{
+    position: relative;
+    width: 100%;
+    height: 220vh;
+}
+.backroutext{
+    height: 100%;
+    background: url(./br_1.png); background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: cover;
+    -webkit-background-size: cover !important;
+}
+.auto {
+    position: absolute;
+    max-width: 1240px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+.img1 {
+    top: 40vh;
+    position: absolute;
+    width: 220px;
+    left: 30px;
+}
+.text1{
+    color: black;
+    font-size: 20px;
+    font-family: math;
+    font-weight: 600;
+    position: absolute;
+    top: 40vh;
+    left: 300px;
+    padding: 0 20px 0 0;
+}
+.text1 .text-1{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.text1 .text-2{
+    font-size: 20px;
+    text-align: justify;
+}
+.img2{
+    top: 90vh;
+    right: 0;
+    position: absolute;
+    width: 220px;
+    padding: 0 20px 0 0;
+}
+.text2{
+    color: black;
+    font-size: 20px;
+    font-family: math;
+    font-weight: 600;
+    position: absolute;
+    top: 90vh;
+    right: 270px;
+    left: 30px;
+}
+.text2 .text-1{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.text2 .text-2{
+    font-size: 20px;
+    text-align: justify;
+    
+}
+.img3{
+    top: 140vh;
+    position: absolute;
+    width: 220px;
+    left: 30px;
+}
+.text3{
+    color: black;
+    font-size: 20px;
+    font-family: math;
+    font-weight: 600;
+    position: absolute;
+    top: 140vh;
+    left: 300px;
+    padding: 0 20px 0 0;
+}
+.text3 .text-1{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.text3 .text-2{
+    font-size: 20px;
+    text-align: justify;
+}
+.text4{
+    color: black;
+    font-size: 21px;
+    font-family: math;
+    font-weight: 600;
+    position: absolute;
+    width: 80vw;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 150px;
+}
+.Contact-text{
+font-size: 22px;
+font-family: math;
+color: black;
+text-align: center;
+margin: 0 210px;
+}
+#header{
+    --height: 90px;
+    height: var(--height);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    margin: auto;
+    max-width: 100%;
+}
+#header .img-web{
+    position: absolute;
+    width: 180px;
+    height: 90px;
+    filter: drop-shadow(2px 1px 2px black);
+    z-index: 50;
+}
+#search {
+    left: 0;
+    position: absolute;
+    /* max-width: 988px; */
+    margin: 2px 0px 0px;
+    right: 0;
+    text-align: center;
+}
+
+.search-container {
+    margin: 0 45px 0 45px;
+    position: relative;
+}
+
+#search input {
+    text-align: center;
+    background: #00000000;
+    width:700px; /* Adjust the width to leave space for the icon */
+    height: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000;
+    padding: 7px 25px;
+    font-size: 16px;
+    font-weight: 300;
+}
+::placeholder { 
+    color: rgb(3, 3, 3);     /* Firefox, Chrome, Opera */
+}
+
+  
+#userShop
+{
+    z-index: 51;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+#userShop .user
+{
+    margin-top: 15px;
+    font-size: 18px;
+    /* font-weight: 500; */
+    color: black;
+    border-radius: 5px;
+    padding: 6px 12px 6px 12px;
+    border: 1px solid;
+}
+
+#userShop a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}    
+#userShop .Shopping
+{
+    position: relative;
+    top: 10px;
+    padding: 10px 15px 10px 10px;
+    color: black;
+    text-decoration: none;
+}
+#userShop .Shopping img
+{
+    width: 30px;
+    height: 30px;
+}
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+   
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+   
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+@media (max-width: 1500px) {
+    #userShop .user {
+        font-size: 17px;
+        width: 100px;
+        border-radius: 5px;
+        border: 1px solid;
+    }
+    .carousel {
+        height: 101vh;
+        margin-top: -7px;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+    }
+}
+#nav > li {
+    display: inline-block;
+}
+
+#nav {
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+text-align: center;
+display: inline-block;
+}
+#nav li > a:before {
+height: 1px;
+bottom: 10px;
+content: '';
+position: absolute;
+left: 50%;
+right: 50%;
+background: red ;
+transition: .3s linear;
+}
+
+#nav li:hover > a:before {
+left: 0;
+right: 0; /* Di chuyển thanh ngang về bên trái */
+transform-origin: left;
+}
+#nav li {
+position: relative;
+margin: 0 40px;
+}
+
+#nav > li > a{     /*thuộc tính chỉ ảnh hưởng cấp 1 ko ảnh hưởng đến cấp 2 (ở more)*/
+color: #000000;
+text-transform: uppercase; /*viết hoa */
+}
+
+#nav li a{
+font-size: 13px;
+text-decoration: none;
+font-weight: 500;
+line-height: 50px;
+display: block;
+padding: 0 15px;
+}
+
+#nav>li:hover>a {
+color: #c60018;
+}
+.inlineBlock
+{
+    display: inline-block;
+}
+.quantity
+{
+    background: red;
+    border-radius: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 60%;
+    padding: 0px 4px;
+    font-size: 8px;
+}
+.map-section {
+    height: 100%;
+    background-color: #24262b;
+}
+.map-section img {
+    width: 100%;
+    height: 100%;
+}
